@@ -12,5 +12,17 @@ function display(value) {
 function calculate() {
     var p = document.getElementById("result").value;
     var q = eval(p);
+    if(document.getElementById("result").value="infinity")
+    {
+        alert("cannot divide by zero ");
+        document.getElementById("result").value = " syntax error";
+    }
+    else
+    {
+        document.getElementById("result").value = q ;
+    }
+        
+       
+        
     document.getElementById("result").value = q;
 }
